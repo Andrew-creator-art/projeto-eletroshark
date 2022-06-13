@@ -1,0 +1,145 @@
+:root{
+    --vermelho:#6ccbedf1;
+    --preto:#141414;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body{
+background: var(--preto);
+font-family:'times new roman', times,serif;
+color: white;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    margin-left: 10px;
+    color:var(--vermelho);
+    font-family:'Arial black', times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+section {
+	
+    padding: 20px;
+    background-image:url('../images/sharks.jpg') ;
+    background-size: cover;
+    overflow: hidden;
+    
+    }
+    .formcontainer{
+        max-width:230px ;
+        background-color:lightblue;
+        padding: 20px;
+        float: right;
+    }
+    h2{
+        font-size: 16px;
+    
+    }
+    .mb{
+        margin-bottom: 27px;
+    
+    }
+    input, select{
+        width: 100%;
+        box-sizing:  border-box;
+        padding: 10px;
+        border: none;
+        margin-bottom: 10px;
+    
+    }
+    input[type="submit"]{
+    
+        color: white;
+        background-color:#48C5CE;
+        font-weight: bold;
+    }
+    select{
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url('../img/seta.jpg');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px)center;
+
+    }
+/*Centro-principal*/
+.Centro-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)  100%), url('../img/fundo-shark.png');
+
+    height: 400px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.Centro-principal .descricao{
+    margin-bottom: 10px;
+    margin-bottom: 40px;
+
+
+}
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none ;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    
+    cursor: pointer;
+    transition:.5s ease all; 
+
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+.botao i{
+    margin-right: 5px;
+
+}
+.box-foto{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-fotos{
+    margin-top: 5px;
+}
